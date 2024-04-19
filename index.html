@@ -83,7 +83,7 @@
                                                 </ul>
                                             </nav>
                                         </div>
-                    <div class="header-right">
+                                        <div class="header-right">
                         <div class="header-contact-info d-flex align-items-center">
                             </div>
                             <a href="contact.html" class="theme-btn">Contact Us</a>
@@ -93,30 +93,26 @@
             </div>
         </header>
 
-        <!-- Full-screen Carousel -->
-        <section class="full-screen-carousel">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <img src="./assets/imgs/meeting.png" alt="Slide 1">
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <img src="./assets/imgs/server.png" alt="Slide 2">
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <img src="./assets/imgs/monitor.png" alt="Slide 3">
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+<!-- Full-screen Carousel -->
+<section class="full-screen-carousel">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+                <img src="./assets/imgs/meeting.png" alt="Slide 1">
             </div>
-        </section>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+                <img src="./assets/imgs/server.png" alt="Slide 2">
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+                <img src="./assets/imgs/monitor.png" alt="Slide 3">
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <!-- Gallery -->
 <section class="gallery-section" style="background-color: #1c1c1c; padding-top: 50px;">
@@ -292,19 +288,21 @@
     <script src="./assets/js/subscribe-form.js"></script>
     <script src="./assets/js/theme-worldmap.js"></script>
 
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
-</body>
 
+    <!-- Add Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+<script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 5000, // 5 seconds
+            disableOnInteraction: false,
+        },
+    });
+</script>
+</body>
 </html>
