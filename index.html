@@ -43,7 +43,6 @@
                         <a href="./index.html" class="logo">
                             <img src="./assets/imgs/logo.png" alt="Logo" />
                         </a>
-
                         <div class="header-left-right">
                             <a href="contact.html" class="theme-btn">Contact Us</a>
                             <span class="menu-bar">
@@ -249,6 +248,9 @@
                                 <p>
                                     <a href="mailto:info@virupaux.com">info@virupaux.com</a>
                                 </p>
+                                <p>
+                                <div id="google_translate_element"></div>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -269,8 +271,6 @@
     </main>
 
 
-
-
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="./assets/js/jquery-3.7.0.min.js"></script>
@@ -289,13 +289,11 @@
     <script src="./assets/js/theme-worldmap.js"></script>
 
 
-    <!-- Add Swiper JS -->
+    <!-- Swiper
+    ============================================= -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
 <script>
-    // Initialize Swiper
     var swiper = new Swiper('.swiper-container', {
-        // Optional parameters
         direction: 'horizontal',
         loop: true,
         autoplay: {
@@ -304,5 +302,21 @@
         },
     });
 </script>
+
+
+    <!-- Google Translate
+    ============================================= -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    }
+</script>
+<script type="text/javascript"
+src="assets/js/translate.js">
+</script>
+
 </body>
 </html>
